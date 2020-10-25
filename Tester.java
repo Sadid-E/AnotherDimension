@@ -30,8 +30,18 @@ public static void main(String[] args) {
   int[][] arr5 = { {  1,  2, 3, 4 },
   {  2, 3,  4,  1 },
   { 3, 4,  1, 2 } };
+  int[][] arr6 = { {  1,  1, 1 },
+  {  2, 2, 2 },
+  { 3,  3, 3 } };
   System.out.println(ArrayOps.isRowMagic(arr5));
   System.out.println(! ArrayOps.isColMagic(arr5));
+  System.out.println(! ArrayOps.isRowMagic(arr6));
+  System.out.println(ArrayOps.isColMagic(arr6));
+  int[][]E = {
+  {  2,  4, 2 },
+  {  2, 2, 2 } };
+  System.out.println(! ArrayOps.isLocationMagic(E, 0, 1));
+  System.out.println(ArrayOps.isLocationMagic(E, 1, 1));
 }
 
 }
