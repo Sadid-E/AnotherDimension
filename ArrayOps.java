@@ -8,7 +8,7 @@ public static int sum(int[] arr) {
   return sum;
 }
 
-public static  int largest(int[] arr) {
+public static int largest(int[] arr) {
   int largest = 0;
   for (int i = 0; i < arr.length; i++) {
     if (arr[i] > largest) {
@@ -16,6 +16,15 @@ public static  int largest(int[] arr) {
     }
   }
   return largest;
+}
+
+public static int[] sumRows(int[][] matrix) {
+  int[] sumRows = new int[matrix.length];
+  int sum = 0;
+  for (int i = 0; i < matrix.length; i++) {
+      sumRows[i] = sum(matrix[i]);
+  }
+  return sumRows;
 }
 
 }
