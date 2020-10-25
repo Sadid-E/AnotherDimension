@@ -42,4 +42,17 @@ public static int sum(int[][] arr) {
   return sum;
 }
 
+public static int[] sumCols(int[][] matrix) {
+  int rows = matrix.length;
+  int cols = matrix[0].length;
+  int[][] arr = new int[cols][rows];
+  for (int i = 0; i < cols; i++) {
+    int sum = 0;
+    for (int j = 0; j < rows; j++) {
+      arr[i][j] = matrix[j][i];
+    }
+  }
+  return sumRows(arr);
+}
+
 }

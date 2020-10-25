@@ -16,6 +16,17 @@ public static void main(String[] args) {
   System.out.println(Arrays.equals(ArrayOps.sumRows(arr3), a));
   System.out.println(Arrays.equals(ArrayOps.largestInRows(arr3), b));
   System.out.println(ArrayOps.sum(arr3)==162);
+  int[][]  arr4 = { {  1,  0, 12, -1 },
+                {  7, -2,  2,  1 },
+                { -5, -2,  2, -9 }
+             };
+  int[] c = {12, 8, -14};
+  int[] d = {12, 7, 2};
+  int[] f = {3, -4, 16, -9};
+  System.out.println(Arrays.equals(ArrayOps.sumRows(arr4), c));
+  System.out.println(Arrays.equals(ArrayOps.largestInRows(arr4), d));
+  System.out.println(ArrayOps.sum(arr4)==6);
+  System.out.println(Arrays.equals(ArrayOps.sumCols(arr4), f));
 }
 
 }
