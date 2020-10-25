@@ -27,6 +27,10 @@ public static void main(String[] args) {
   System.out.println(Arrays.equals(ArrayOps.largestInRows(arr4), d));
   System.out.println(ArrayOps.sum(arr4)==6);
   System.out.println(Arrays.equals(ArrayOps.sumCols(arr4), f));
+  int[][] arr5 = { {  1,  2, 3, 4 },
+  {  2, 3,  4,  1 },
+  { 3, 4,  1, 2 } };
+  System.out.println(ArrayOps.isRowMagic(arr5));
 }
 
 }

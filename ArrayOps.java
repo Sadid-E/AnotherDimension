@@ -55,4 +55,15 @@ public static int[] sumCols(int[][] matrix) {
   return sumRows(arr);
 }
 
+public static boolean isRowMagic(int[][] matrix) {
+  int[] sumRows = sumRows(matrix);
+  boolean magic = true;
+  for (int i = 1; i < sumRows.length; i++) {
+        if (sumRows[i] != sumRows[i-1]) {
+          magic = false;
+        }
+  }
+  return magic;
+}
+
 }
