@@ -15,6 +15,7 @@ public static void main(String[] args) {
   int[] b = {1, 100, 9};
   System.out.println(Arrays.equals(ArrayOps.sumRows(arr3), a));
   System.out.println(Arrays.equals(ArrayOps.largestInRows(arr3), b));
+  System.out.println(ArrayOps.sum(arr3)==162);
 }
 
 }
