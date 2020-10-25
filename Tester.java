@@ -31,6 +31,7 @@ public static void main(String[] args) {
   {  2, 3,  4,  1 },
   { 3, 4,  1, 2 } };
   System.out.println(ArrayOps.isRowMagic(arr5));
+  System.out.println(! ArrayOps.isColMagic(arr5));
 }
 
 }
