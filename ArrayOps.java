@@ -20,11 +20,18 @@ public static int largest(int[] arr) {
 
 public static int[] sumRows(int[][] matrix) {
   int[] sumRows = new int[matrix.length];
-  int sum = 0;
   for (int i = 0; i < matrix.length; i++) {
       sumRows[i] = sum(matrix[i]);
   }
   return sumRows;
+}
+
+public static  int[] largestInRows(int[][] matrix) {
+  int[] largestInRows = new int[matrix.length];
+  for (int i = 0; i < matrix.length; i++) {
+    largestInRows[i] = largest(matrix[i]);
+  }
+  return largestInRows;
 }
 
 }

@@ -12,7 +12,9 @@ public static void main(String[] args) {
   System.out.println(ArrayOps.largest(arr2)==15);
   int[][] arr3 = {{1},{100,10,1},{1,9,2,8,3,7,4,6,5,5}};
   int[] a = {1, 111, 50};
+  int[] b = {1, 100, 9};
   System.out.println(Arrays.equals(ArrayOps.sumRows(arr3), a));
+  System.out.println(Arrays.equals(ArrayOps.largestInRows(arr3), b));
 }
 
 }
